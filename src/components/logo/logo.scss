@@ -1,0 +1,26 @@
+@import '../../style/variables.scss';
+
+.logo {
+    position: relative;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: $main;
+    padding-left: 35px;
+    &::before {
+        content: url(../../img/logo_dark.svg);
+        position: absolute;
+        bottom: 3px;
+        left: 0;
+        width: 35px;
+        height: 35px;
+    }
+
+    &_white {
+        color: $light;
+        text-shadow: 0px 4px 4px rgba($main, 0.25);
+        &::before {
+            content: url(../../img/logo.svg);
+        }
+    }
+}

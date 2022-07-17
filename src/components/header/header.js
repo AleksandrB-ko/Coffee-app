@@ -1,7 +1,7 @@
 import { Component } from 'react';
 
 
-import Logo from '../../img/logo.svg';
+import Logo from '../logo/logo';
 
 import './header.scss';
 
